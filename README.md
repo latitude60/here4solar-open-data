@@ -19,6 +19,8 @@ The [UK Solar Export Tariff Transparency Report 2026](https://here4solar.uk/sola
 
 A [1200x630 shareable findings graphic](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariff-transparency-report-2026.png) is available for relevant articles, presentations and social posts. Keep the wording intact and credit the report page.
 
+Journalists, researchers and newsletter editors can use [PRESS.md](PRESS.md) for a short summary, checked figures, asset links, limitations and contact details.
+
 Headline results include:
 
 - a 25p/kWh public headline maximum, or 20p/kWh among current Ofgem-listed licensees;
@@ -39,6 +41,7 @@ Good Energy confirmed by email on 10 July 2026 that 12p/kWh is the current stand
 - `SHA256SUMS` — checksums for all current and archived data files.
 - `datapackage.json` — Frictionless Data-style package and field metadata.
 - `CITATION.cff` and `.zenodo.json` — citation and repository-archiving metadata.
+- `PRESS.md` — concise media and citation note with reusable findings and asset links.
 - `scripts/validate-data.mjs` — dependency-free CSV, JSON, schema and checksum validation.
 
 ## Validate the release
