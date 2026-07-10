@@ -1,0 +1,51 @@
+name: Data correction
+description: Suggest a change supported by an official supplier or Ofgem source.
+title: "Correction: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the dataset. Please do not include account details, meter identifiers or other personal information.
+  - type: input
+    id: supplier
+    attributes:
+      label: Supplier or legal licensee
+      placeholder: Example Energy Limited
+    validations:
+      required: true
+  - type: input
+    id: tariff
+    attributes:
+      label: Tariff or record
+      placeholder: Public tariff name or source-gap record
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field that should change
+      placeholder: rate_p_per_kwh
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: Use a public supplier-owned page or an Ofgem page.
+      placeholder: https://example.co.uk/export-tariff/
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: What should change and why?
+      description: Quote only the short wording needed to locate the evidence.
+    validations:
+      required: true

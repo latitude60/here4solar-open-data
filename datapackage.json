@@ -1,0 +1,77 @@
+{
+  "profile": "tabular-data-package",
+  "name": "uk-solar-export-tariffs-2026-07-10",
+  "title": "UK solar export tariff and SEG licensee coverage dataset",
+  "description": "A dated, primary-source-led dataset covering every supplier on Ofgem's 2026/27 Smart Export Guarantee licensee list, plus Good Energy export products for market context.",
+  "version": "2.0.0",
+  "homepage": "https://here4solar.uk/uk-solar-export-tariff-data/",
+  "created": "2026-07-10",
+  "keywords": [
+    "solar export tariffs",
+    "Smart Export Guarantee",
+    "SEG rates",
+    "United Kingdom",
+    "residential solar"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Here4Solar Editorial",
+      "path": "https://here4solar.uk/about/",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ofgem Smart Export Guarantee supplier list",
+      "path": "https://www.ofgem.gov.uk/guidance/smart-export-guarantee-supplier-list"
+    }
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "current-csv",
+      "title": "UK solar export tariffs and SEG coverage, version 2.0",
+      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "primaryKey": ["legal_licensee", "tariff"],
+        "fields": [
+          {"name": "record_status", "type": "string", "constraints": {"required": true, "enum": ["published_flat_rate", "official_site_checked_public_rate_not_located"]}},
+          {"name": "supplier", "type": "string", "constraints": {"required": true}},
+          {"name": "legal_licensee", "type": "string", "constraints": {"required": true}},
+          {"name": "ofgem_seg_status", "type": "string", "constraints": {"required": true, "enum": ["mandatory", "voluntary", "not_listed_on_2026_27_ofgem_seg_list"]}},
+          {"name": "tariff", "type": "string", "constraints": {"required": true}},
+          {"name": "rate_p_per_kwh", "type": "number"},
+          {"name": "rate_type", "type": "string", "constraints": {"required": true}},
+          {"name": "import_supplier_required", "type": "string", "constraints": {"required": true, "enum": ["yes", "no", "not_stated"]}},
+          {"name": "installer_or_purchase_required", "type": "string", "constraints": {"required": true, "enum": ["yes", "no", "not_stated"]}},
+          {"name": "battery_required", "type": "string", "constraints": {"required": true, "enum": ["yes", "no", "not_stated"]}},
+          {"name": "system_size_public_summary", "type": "string", "constraints": {"required": true}},
+          {"name": "checked_date", "type": "date", "format": "default", "constraints": {"required": true}},
+          {"name": "source_url", "type": "string", "format": "uri", "constraints": {"required": true}},
+          {"name": "ofgem_source_url", "type": "string", "format": "uri", "constraints": {"required": true}},
+          {"name": "notes", "type": "string", "constraints": {"required": true}}
+        ]
+      }
+    },
+    {
+      "profile": "data-resource",
+      "name": "current-json",
+      "title": "UK solar export tariffs and SEG coverage, version 2.0 JSON",
+      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    }
+  ]
+}
+

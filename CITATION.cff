@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata below."
+type: dataset
+title: "UK solar export tariff and SEG licensee coverage dataset"
+version: "2.0"
+date-released: 2026-07-10
+authors:
+  - name: "Here4Solar Editorial"
+publisher:
+  name: "Here4Solar"
+license: "CC-BY-4.0"
+url: "https://here4solar.uk/uk-solar-export-tariff-data/"
+abstract: "A dated primary-source dataset covering all suppliers on Ofgem's 2026/27 Smart Export Guarantee licensee list, plus Good Energy market-context export products."
+keywords:
+  - solar export tariffs
+  - Smart Export Guarantee
+  - SEG rates
+  - United Kingdom
+  - residential solar
+

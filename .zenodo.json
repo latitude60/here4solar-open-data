@@ -1,0 +1,18 @@
+{
+  "title": "UK solar export tariff and SEG licensee coverage dataset",
+  "description": "A dated, primary-source-led dataset covering every supplier on Ofgem's 2026/27 Smart Export Guarantee licensee list, plus Good Energy export products for market context.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {"name": "Here4Solar Editorial"}
+  ],
+  "keywords": [
+    "solar export tariffs",
+    "Smart Export Guarantee",
+    "SEG rates",
+    "United Kingdom",
+    "residential solar"
+  ]
+}
+
