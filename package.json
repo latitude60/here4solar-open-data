@@ -1,6 +1,6 @@
 {
   "name": "here4solar-uk-solar-export-data",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "description": "Primary-source UK solar export tariff and Smart Export Guarantee licensee coverage data.",
   "type": "module",
@@ -21,4 +21,3 @@
     "node": ">=20"
   }
 }
-

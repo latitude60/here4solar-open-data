@@ -19,13 +19,15 @@ The version 2.0 dataset was checked against Ofgem and supplier-owned public page
 
 Good Energy separately confirmed on 10 July 2026 that 12p/kWh was the standard Solar Savings rate for new applications. Report version 1.1 records that clarification.
 
+The current version 2.1 dataset adds a dated correction: Pozitive Energy's former SEG page began returning HTTP 404, so its cached 5p/kWh statement is no longer presented as a current verified offer. The current release therefore contains 29 verified flat-rate records and four official-source gaps. Version 2.0 remains archived and continues to support the published report.
+
 ## Links and assets
 
 - [HTML report](https://here4solar.uk/solar-export-tariff-transparency-report-2026/)
 - [Five-page PDF, version 1.1](https://here4solar.uk/wp-content/uploads/2026/07/here4solar-uk-export-tariff-transparency-report-july-2026-v1-1.pdf)
 - [Dataset and methodology landing page](https://here4solar.uk/uk-solar-export-tariff-data/)
-- [CSV, version 2.0](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariffs-2026-07-10-v2.csv)
-- [JSON, version 2.0](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariffs-2026-07-10-v2.json)
+- [CSV, version 2.1](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariffs-2026-07-10-v2-1.csv)
+- [JSON, version 2.1](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariffs-2026-07-10-v2-1.json)
 - [1200x630 findings graphic](https://here4solar.uk/wp-content/uploads/2026/07/uk-solar-export-tariff-transparency-report-2026.png)
 
 The graphic may be reused with the wording intact and a credit linking to the HTML report. The data and report are published under Creative Commons Attribution 4.0.
@@ -40,7 +42,7 @@ The graphic may be reused with the wording intact and a credit linking to the HT
 
 ## Suggested citation
 
-> Here4Solar. *UK solar export tariff and SEG licensee coverage dataset*, version 2.0, checked 10 July 2026. https://here4solar.uk/uk-solar-export-tariff-data/
+> Here4Solar. *UK solar export tariff and SEG licensee coverage dataset*, version 2.1, checked and corrected 10 July 2026. https://here4solar.uk/uk-solar-export-tariff-data/
 
 ## Contact and corrections
 

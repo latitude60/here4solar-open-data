@@ -3,7 +3,7 @@
   "name": "uk-solar-export-tariffs-2026-07-10",
   "title": "UK solar export tariff and SEG licensee coverage dataset",
   "description": "A dated, primary-source-led dataset covering every supplier on Ofgem's 2026/27 Smart Export Guarantee licensee list, plus Good Energy export products for market context.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "homepage": "https://here4solar.uk/uk-solar-export-tariff-data/",
   "created": "2026-07-10",
   "keywords": [
@@ -37,8 +37,8 @@
     {
       "profile": "tabular-data-resource",
       "name": "current-csv",
-      "title": "UK solar export tariffs and SEG coverage, version 2.0",
-      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2.csv",
+      "title": "UK solar export tariffs and SEG coverage, version 2.1",
+      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2-1.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -66,12 +66,11 @@
     {
       "profile": "data-resource",
       "name": "current-json",
-      "title": "UK solar export tariffs and SEG coverage, version 2.0 JSON",
-      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2.json",
+      "title": "UK solar export tariffs and SEG coverage, version 2.1 JSON",
+      "path": "data/current/uk-solar-export-tariffs-2026-07-10-v2-1.json",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "utf-8"
     }
   ]
 }
-

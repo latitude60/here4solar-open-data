@@ -4,8 +4,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const currentCsv = "data/current/uk-solar-export-tariffs-2026-07-10-v2.csv";
-const currentJson = "data/current/uk-solar-export-tariffs-2026-07-10-v2.json";
+const currentCsv = "data/current/uk-solar-export-tariffs-2026-07-10-v2-1.csv";
+const currentJson = "data/current/uk-solar-export-tariffs-2026-07-10-v2-1.json";
 
 function fail(message) {
   throw new Error(message);
@@ -72,11 +72,11 @@ const json = JSON.parse(read(currentJson));
 const dataPackage = JSON.parse(read("datapackage.json"));
 const expectedHeaders = Object.keys(json.columns);
 
-assert(json.version === "2.0", `Unexpected JSON version ${json.version}`);
+assert(json.version === "2.1", `Unexpected JSON version ${json.version}`);
 assert(json.checked_date === "2026-07-10", `Unexpected checked date ${json.checked_date}`);
 assert(JSON.stringify(csv.headers) === JSON.stringify(expectedHeaders), "CSV headers do not match the JSON column order");
 assert(csv.records.length === json.rows.length, "CSV and JSON row counts differ");
-assert(dataPackage.version === "2.0.0", "Data Package version is not 2.0.0");
+assert(dataPackage.version === "2.1.0", "Data Package version is not 2.1.0");
 assert(dataPackage.resources.length === 2, "Data Package should describe two current resources");
 for (const resource of dataPackage.resources) {
   assert(fs.existsSync(path.join(root, resource.path)), `Data Package resource is missing: ${resource.path}`);
@@ -132,10 +132,9 @@ const summary = {
 };
 
 assert(summary.rows === 33, "Expected 33 total records");
-assert(summary.publishedFlatRates === 30, "Expected 30 published flat-rate records");
-assert(summary.officialSourceGaps === 3, "Expected three official-source-gap records");
+assert(summary.publishedFlatRates === 29, "Expected 29 published flat-rate records");
+assert(summary.officialSourceGaps === 4, "Expected four official-source-gap records");
 assert(summary.publicBrands === 17, "Expected 17 public brands");
 assert(summary.currentOfgemLicensees === 16, "Expected all 16 current Ofgem licensees");
 
 console.log(JSON.stringify({ ok: true, ...summary }, null, 2));
-
